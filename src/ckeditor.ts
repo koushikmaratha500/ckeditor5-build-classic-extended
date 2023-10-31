@@ -23,6 +23,7 @@ import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
 import { FontBackgroundColor, FontColor, FontFamily, FontSize } from '@ckeditor/ckeditor5-font';
 import { Heading } from '@ckeditor/ckeditor5-heading';
+import { SourceEditing } from '@ckeditor/ckeditor5-source-editing';
 import { HorizontalLine } from '@ckeditor/ckeditor5-horizontal-line';
 import { GeneralHtmlSupport } from '@ckeditor/ckeditor5-html-support';
 import {
@@ -114,7 +115,8 @@ class Editor extends ClassicEditor {
 		TableColumnResize,
 		TableToolbar,
 		TextTransformation,
-		Underline
+		Underline,
+		SourceEditing
 	];
 
 	public static override defaultConfig = {
@@ -151,7 +153,8 @@ class Editor extends ClassicEditor {
 				'fontFamily',
 				'alignment',
 				'style',
-				'underline'
+				'underline',
+				'sourceEditing'
 			]
 		},
 		language: 'en',
