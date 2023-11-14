@@ -58,6 +58,7 @@ import {
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import MathType from '@wiris/mathtype-ckeditor5';
+import Eqneditor5 from '@codecogs/eqneditor-ckeditor5/src/eqneditor5';
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -114,7 +115,8 @@ class Editor extends ClassicEditor {
 		TableColumnResize,
 		TableToolbar,
 		TextTransformation,
-		Underline
+		Underline,
+		Eqneditor5
 	];
 
 	public static override defaultConfig = {
@@ -143,6 +145,7 @@ class Editor extends ClassicEditor {
 				'specialCharacters',
 				'ChemType',
 				'MathType',
+				'eqneditor5Button',
 				'imageInsert',
 				'horizontalLine',
 				'fontBackgroundColor',
